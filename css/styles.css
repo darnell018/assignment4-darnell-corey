@@ -8,8 +8,8 @@
 
 h2 {
   font-size: 48px;
-  color: #FFE81F;
-  text-align: center;
+  font-weight: bold;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -53,13 +53,12 @@ header a:hover {
 /*------Hero Styles------*/
 .hero {
   background: url('../images/sw-hero-1.jpg') center/cover no-repeat;
-  height: 92vh;
-  margin-top: 80px;
+  height: 100vh;
   max-width: 100%;
 }
 
 .hero-content{
-  padding: 250px 0px 0px 200px;
+  padding: 300px 0px 0px 200px;
 }
 
 .hero h1 {
@@ -99,26 +98,70 @@ header a:hover {
 }
 
 /*------Films Styles------*/
+.shop {
+    height: 80vh;
+}
+
+
+/*------Films Styles------*/
 .films {
-    height: 500px;
+    height: 100vh;
 }
 
 .films
-.storm-trooper {
-    position: absolute;
-    right: 0px;
-    z-index: 1;
+.light-saber {
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 100%;
 }
 
-
-.film-cover {
-    width: 125px;
-    margin: 10px;
+.films-info {
+  height: 100%;
+  width: 50%;
+  background: #FFE81F;
 }
 
-.film-cover-container {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  z-index: 2;
+.films-content {
+  padding: 300px 0px 0px 100px;
+}
+
+.films-content h2 {
+  font-size: 50px;
+  font-weight: 800;
+  color: black;
+  text-transform: uppercase;
+}
+
+.films-content p {
+  font-size: 24px;
+  font-weight: 300;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.classics {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.films-content a {
+  position: absolute;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 10px 30px;
+  margin-top: 50px;
+  transition: .3s
+}
+
+.films-content a:hover {
+  background-color: black;
+  border: 3px solid black;
+  transition: .3s
 }

@@ -1,4 +1,4 @@
-/*------Universal Styles------*/
+/*-------------------Universal Styles-------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -8,18 +8,19 @@
 
 h2 {
   font-size: 48px;
-  font-weight: bold;
+  font-weight: 800;
   color: black;
   text-transform: uppercase;
 }
 
-/*------Header Styles------*/
+/*-------------------Header Styles-------------------*/
 header {
   width: 100%;
   height: 80px;
   top: 0px;
   background: white;
   position: fixed;
+  box-shadow: 1px 0px 2px #333333;
   z-index: 1000;
 }
 
@@ -50,7 +51,7 @@ header a:hover {
 }
 
 
-/*------Hero Styles------*/
+/*-------------------Hero Styles-------------------*/
 .hero {
   background: url('../images/sw-hero-1.jpg') center/cover no-repeat;
   height: 100vh;
@@ -63,7 +64,7 @@ header a:hover {
 
 .hero h1 {
   font-size: 64px;
-  font-weight: 600;
+  font-weight: 800;
   color: white;
   text-transform: uppercase;
   text-shadow: 1px 1px 4px black;
@@ -97,13 +98,60 @@ header a:hover {
   transition: .3s;
 }
 
-/*------Films Styles------*/
+
+/*-------------------Shop Styles-------------------*/
 .shop {
-    height: 80vh;
+    height: 100vh;
+}
+
+.shop-content {
+  text-align: center;
+  padding-top: 100px;
+  z-index: 99
+}
+
+.shop-heading p {
+  margin-bottom: 60px;
+}
+
+.shop-heading a {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+  border-radius: 25px;
+  padding: 10px 30px;
+  background: #FFE81F;
+  transition: .3s;
+}
+
+.shop-heading a:hover {
+  color: white;
+  background: black;
+  transition: .3s;
+}
+
+.sw-ship {
+  position: absolute;
+  margin: 60px 0;
+  height: 150px;
+  opacity: .25;
+  z-index: 100;
+  animation: fly 10s forwards infinite linear
+}
+
+.shop-item {
+  width: 20%;
+  display: inline-block;
+  margin-top: 50px;
+  z-index: 2;
+}
+.shop-item img {
+    width: 100%;
 }
 
 
-/*------Films Styles------*/
+/*-------------------Films Styles-------------------*/
 .films {
     height: 100vh;
 }
@@ -164,4 +212,19 @@ header a:hover {
   background-color: black;
   border: 3px solid black;
   transition: .3s
+}
+
+
+
+
+
+/*-------------------Animations-------------------*/
+
+@keyframes fly {
+  from {
+    transform: translateX(-600px);
+  }
+  to {
+    transform: translateX(1800px);
+  }
 }

@@ -71,7 +71,7 @@ header a:hover {
 }
 
 .hero-content{
-  padding: 300px 0px 0px 200px;
+  padding: 625px 0px 0px 200px;
 }
 
 .hero h1 {
@@ -87,30 +87,11 @@ header a:hover {
   text-shadow: 1px 1px 4px black;
 }
 
-.hero-content a {
-  position: absolute;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  text-decoration: none;
-  border: 3px solid white;
-  border-radius: 25px;
-  padding: 10px 30px;
-  margin-top: 50px;
-  transition: .3s;
-}
-
-.hero-content a:hover {
-  color: white;
-  border: 3px solid #FFE81F;
-  background-color: #FFE81F;
-  transition: .3s;
-}
-
 .galaxy {
   color: #FFE81F;
   font-weight: bold;
   font-size: 36px;
+  letter-spacing: 5px;
 }
 /*-------------------Shop Styles-------------------*/
 .shop {

@@ -107,7 +107,11 @@ header a:hover {
   transition: .3s;
 }
 
-
+.galaxy {
+  color: #FFE81F;
+  font-weight: bold;
+  font-size: 36px;
+}
 /*-------------------Shop Styles-------------------*/
 .shop {
     height: 100vh;
